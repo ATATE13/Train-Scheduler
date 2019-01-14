@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1 class="text-center" id="heading">All a Board</h1>
+      <h1 class="text-center" id="heading"><img src="assets/images/train3.jpeg" style="width:150px;height:100px;"> All a Board <img src="assets/images/train5.jpg" style="width:150px;height:100px;"> </h1>
       <h2 class="text-center" id="subHeading">Train Times</h2>
       <p class="pull-right" id="currentTime"></p>
     </div>
@@ -35,7 +35,6 @@
                   <th class="text-center">Frequency</th>
                   <th class="text-center">Next Arrival</th>
                   <th class="text-center">Minutes Away</th>
-                  <!-- <th class="text-center">Remove</th> -->
                 </tr>
               </thead>
               <tbody id="train-table-rows">
@@ -69,7 +68,7 @@
                     <input type="text" class="form-control form-field" id="frequency">
                   </div>
 
-                  <button type="submit" class="btn btn-default" id="submit">Add Train</button>
+                  <button type="submit" class="btn btn-light" id="submit">Add Train</button>
                 </form>
               </div>
             </div>
@@ -83,10 +82,11 @@
   <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
   <!--jQuery Reference-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Linking Moment JS-->
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.23.0/moment.min.js"></script>
   <!--Script to JS-->
   <script type="text/javascript" src="app.js"></script>
-  <!--Linking moment JS-->
-  <script src="https://cdn.jsdelivr.net/npm/moment@2.23.0/moment.min.js"></script>
+ 
 
 </body>
 

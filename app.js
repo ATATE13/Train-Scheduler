@@ -22,7 +22,7 @@ var frequency = 0;
 function currentTime() {
   var current = moment().format("LT");
   $("#currentTime").html(current);
-  setTimeout(currentTime, 1000);
+  // setTimeOut(current, 1000);
 };
 
 //Adds train schedule information to the database
@@ -69,7 +69,7 @@ $("#submit").on("click", function (event) {
       startTime: startTime,
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
-
+    // Clears the data saved in session storage
     sessionStorage.clear();
   }
 
@@ -90,7 +90,7 @@ database.ref().on("child_added", function (childSnapshot) {
   newrow.append($("<td class='text-center'>" + childSnapshot.val().frequency + "</td>"));
   newrow.append($("<td class='text-center'>" + moment(nextTrain).format("LT") + "</td>"));
   newrow.append($("<td class='text-center'>" + minToArrival + "</td>"));
-  // newrow.append($("<td class='text-center'><button class='arrival btn btn-danger btn-xs' data-key='" + key + "'>X</button></td>"));
+
 
   if (minToArrival < 6) {
     newrow.addClass("info");

@@ -1,21 +1,41 @@
-/* body {
-  background-image: url(/assets/images/traindepot1.jpeg);
-} */
+body {
+  background-color: lightblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 #heading {
   font-family: Times;
   font-weight: bold;
+  color: darkblue;
 }
 
 #subHeading {
   font-family: Times;
   font-style: italic;
+  color: darkblue;
 }
 
 .panel-title {
   font-weight: bold;
+  color: darkblue;
 }
 
 th {
   font-weight: bold;
+  color: darkblue;
+}
+
+td {
+  font-weight: bold;
+  color: darkblue;
+}
+form {
+  border: 10px;
+  color: darkblue;
+}
+
+.jumbotron {
+  color:darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
 }
