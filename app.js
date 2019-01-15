@@ -6,7 +6,7 @@ var config = {
   projectId: "train-scheduler-f7832",
   storageBucket: "train-scheduler-f7832.appspot.com",
   messagingSenderId: "139077011558"
-};
+}; 7
 
 firebase.initializeApp(config);
 //Variable to refence the database
